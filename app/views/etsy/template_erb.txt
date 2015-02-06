@@ -1,0 +1,95 @@
+      <%= form_tag("/search"), method: "get") do %> 
+        <%= label_tag(:searchBar, "Search for:") %> 
+        <%= text_field_tag(:searchBar) %> 
+        <%= submit_tag("Search") %> 
+      <% end %> 
+
+      <h1> All Categories < <%= search query "(#{@count} Results)"%> </h1>
+      <% if @results %>
+      	<ol>
+      	<% @results.each do |result| %>
+      		<%= result.mainimage %>
+      		<%= result.itemName %>
+      		<%= result.shop %>
+      		<%= result.price %>
+      	<% end %>
+      	</ol>
+      <% end %>
+
+
+
+<div class="container5">
+	<div class="container4">
+		<div class="container3">
+			<div class="container2">
+				<div class="container1">
+					<div class="col1"> <!-- Column one start -->
+						<ul>
+           				    <ul>
+           				        <li class=""><h4>Turn Your Passion Into a Business</h4></li>
+           				        <li><a class="" href="/sell/?ref=ftr">Open a Shop</a></li>
+           				    </ul>
+           				    <li class=""><h4>Sell on Etsy</h4></li>
+           				    <li class="sell-on-etsy-mobile"><a href="/sell/?ref=ftr">Open a Shop</a></li>
+           				    <li><a href="https://blog.etsy.com/en/category/seller-handbook/?ref=ftr">Seller Handbook</a></li>
+           				    <li><a href="/reader?ref=ftr">Etsy Credit Card Reader</a></li>
+           				</ul>
+					</div> <!-- Column one end -->
+					<div id="col2"> <!-- Column two start -->
+						<ul>
+            			    <li class=""><h4>Join the Community</h4></li>
+            			    <li><a href="/teams/?ref=ftr">Teams</a></li>
+            			    <li><a href="/forums/?ref=ftr">Forums</a></li>
+            			    <li><a href="/community/events/?ref=ftr">Upcoming Events</a></li>
+            			    <li><a href="/affiliates?ref=ftr">Affiliates</a></li>
+            			</ul>
+					</div> <!-- Column two end -->
+					<div id="col3"> <!-- Column three start -->
+           				<ul>
+           				    <li class=""><h4>Discover and Shop</h4></li>
+           				    <li><a href="/giftcards/?ref=ftr">Gift Cards</a></li>
+           				    <li><a href="/blog/en/?ref=ftr">Blog</a></li>
+           				    <li><a href="/pages/?ref=ftr">Tastemakers</a></li>
+           				    <li><a href="/mobile/?ref=ftr">Mobile Apps</a></li>
+           				    <li><a href="/registry/?ref=ftr">Gift Registries</a></li>
+           				    <li><a href="/wholesale?ref=ftr">Wholesale</a></li>
+           				</ul>
+					</div> <!-- Column three end -->
+					<div id="col4"> <!-- Column four start -->
+					    <ul>
+                		    <li class=""><h4>Get to Know Us</h4></li>
+                		    <li><a id="" href="/about/?ref=ftr">About</a></li>
+                		    <li><a href="/careers/?ref=ftr">Careers</a></li>
+                		    <li><a href="/press/?ref=ftr">Press</a></li>
+                		    <li><a href="/developers/?ref=ftr">Developers</a></li>
+                		</ul>
+					</div> <!-- Column four end -->
+					<div id="col5"> <!-- Column five start -->
+	    				<ul>
+                		    <li class=""><h4>Follow Etsy</h4></li>
+                		    <li class="social fb"><a href="https://www.facebook.com/Etsy/">Facebook</a></li>
+                		    <li class="social twitter"><a href="https://twitter.com/etsy/">Twitter</a></li>
+                		    <li class="social pin"><a href="http://www.pinterest.com/etsy/">Pinterest</a></li>
+                		    <li class="social instagram"><a href="http://instagram.com/etsy">Instagram</a></li>
+                		</ul>
+					</div> <!-- Column five end -->
+				</div> <!-- end container1 -->
+			</div> <!-- end container2 -->
+		</div> <!-- end container3 -->
+	</div> <!-- end container4 -->
+</div> <!-- end container5 --> 
+
+
+    </div> <!-- end bodyContainer -->
+    <div class="bodyContainer"> <!-- start bodyContainer -->
+
+
+          <div class="container5"> <!-- start container 1 -->
+      <div class="container4"> <!-- start container 2 -->
+        <div class="container3"> <!-- start container 3 -->
+          <div class="container2"> <!-- start container 4 -->
+
+                      </div> <!-- end container2 -->
+        </div> <!-- end container3 -->
+      </div> <!-- end container4 -->
+    </div> <!-- end container5 -->

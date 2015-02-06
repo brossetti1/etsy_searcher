@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ /*
+html body
+{
+    
+    padding: 0;
+    height: 100%;
+}
+
+div {
+  border: 1px solid;
+  border-radius: 25px;
+  border-color: red;
+} 
+
+
+body {
+  background-color: yellow;
+}
+*/
+
+::-webkit-input-placeholder {
+   text-align: center-left;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center-left;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center-left;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center-left; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+   list-style-type: none;
+}
+
+div.mainContainer {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+  background-color:#FFFFFF; /* */
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  margin: 0px;
+  width: 960px;
+}
+
+.logo.etsyLogo{
+  background-image: url("etsy.com/assets/dist/images/etsylogo.20150203215610.png");
+  width: 75px;
+  height: 50px;
+  margin-top: 5 px;
+  margin-right: 20px;
+  float: left;
+}
+
+.searchBarWrap div {
+  float:left;
+  margin-top: 10px;
+}
+
+.searchWrapper {
+  float: left;
+  display: table-cell;
+  width: 25%;
+  top: 50%;
+
+}
+
+.searchBox {
+position: relative;
+margin-top: 0;
+width: 100%;
+padding: 6px 10px;
+margin-left: 0;
+height: 34px;
+font-size: 14px;
+}
+
+
+.squareButton{
+  float: left;
+  background: #25A6E1;
+  padding:0px 13px 0px 13px;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:17px;
+  border-radius:4px;
+  border:1px solid #1A87B9;
+  border-color: #428bca;
+  height: 34px;
+  text-align: center;
+}
+
+.squareButton:hover,
+.squareButton:focus,
+.squareButton:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+.Browse {
+  float: left;
+}
+
+.header li {
+  float: right;
+  display: inline;
+  margin-left: 10px;
+}
+
+
+.bodyContainer {
+  width: 960px;
+  margin-top:20px;
+}
+
+.sideBar {
+  width: 240px;
+  float: left;
+}
+
+
+.sideBar ul {
+  margin-left: 20px;
+}
+
+h4#sideHeading {
+  margin-left: 10px;
+}
+.displaySearch {
+  float:right;
+  width: 720px;
+
+}
+
+.itemBox {
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+  float: right;
+  background-color: red;
+
+}
+
+
+.container1 {
+	float: left;
+	width: 940px;
+  margin: 0 auto;
+}
+
+
+
+.col {
+	float:left;
+	width: 180px;
+	position:relative;
+  margin: 0 auto;
+}
+
+
+.buttonFormat {
+  background: #25A6E1;
+  padding:8px 13px;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:17px;
+  border-radius:4px;
+  border:1px solid #1A87B9
+}       
+
+.buttonFormat:hover,
+.buttonFormat:focus,
+.buttonFormat:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+/*
+.col-1-footer .col-2-footer .col-3-footer .col-4-footer .col-5-footer {
+  float: left;
+  width: 20%;
+  padding: 2%;
+  display: table;
+} */
+

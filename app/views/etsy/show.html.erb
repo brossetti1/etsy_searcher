@@ -1,0 +1,134 @@
+<!doctype html>
+
+  <div class="mainContainer"> <!-- start mainContainer -->
+		<div class="header">  <!-- start header -->
+			<div class="logo"><a id="etsyLogo"></a></div>
+
+      <div>
+        <%= form_tag etsy_search_path, method: 'get' do %> 
+          <%= label_tag 'searchBar', 'Search for items or shops' %> 
+          <%= text_field_tag 'search_query', params[:search_query] %> 
+          <%= submit_tag 'Search', name: nil %> 
+        <% end %> 
+      </div>
+
+			<form class="searchBar"> <!-- start search bar -->
+        <div class="searchBarWrap">
+          <div class="searchWrapper">
+			    <input type="search" class="searchBox" name="search_query" placeholder="Search for items or shops" type="text" />
+          </div> <!-- end searchWrapper -->
+          <div>
+			    <input class="squareButton" type="submit" value="Search" />
+          </div> <!-- end squareButton -->
+        </div>
+			</form> <!-- end search bar -->
+
+      <div class="Browse">
+        <a href="">
+          <span>
+            <span>
+              Browse
+            </span>
+          </span>
+        </a>
+      </div>
+			    <li><%= link_to "Home",      '#' %></li>
+			    <li><%= link_to "Favorites", '#' %></li>
+			    <li><%= link_to "You",       '#' %></li>
+		      <li><%= link_to "Cart",      '#' %></li>
+		</div> <!-- end header -->
+
+
+
+      <h3>Show results for:</h3>
+      <div class="sideBar"> <!-- start sideBar -->
+		    <div class="sideBarSuggestions"> <!-- start sideBarSuggestions -->
+          <h4 id="sideHeading">All Categories</h4> 
+  		  	<ul>
+  		      <li>testing sidebar</li>
+  		      <li>testing sidebar</li>
+  		      <li>testing sidebar</li>
+  		      <li>testing sidebar</li>
+  		      <li>testing sidebar</li>
+  		      <li>testing sidebar</li>
+  		  	</ul>
+  		  </div> <!-- end sideBarSuggestions -->
+      
+        <h3>refine your search:</h3>
+         <div class="sideBarSearch"> <!-- start sideBarSearch -->
+          <ul>
+            <h4>sideBar</h4> 
+            <li>testing sidebar</li>
+            <li>testing sidebar</li>
+            <li>testing sidebar</li>
+            <li>testing sidebar</li>
+            <li>testing sidebar</li>
+            <li>testing sidebar</li>
+          </ul>
+        </div> <!-- end sideBarSearch -->
+      </div> <!-- end sideBar -->
+
+
+   <div class="displaySearch"> <!-- start displaySearch -->
+  		<span class="itemBox">testing items</span> 
+      <span class="itemBox">testing items</span> 
+      <span class="itemBox">testing items</span>
+	 </div> <!-- end displaySearch -->
+
+
+
+
+
+    <div class="container1"> <!-- start container 5 -->
+      <div class="col"> <!-- Column one start -->
+        <ul>
+          <li class=""><h4>Turn Your Passion Into a Business</h4></li>
+          <li><input type="submit" class="buttonFormat" value="Open a Shop" /></li>
+          <li class=""><h4>Sell on Etsy</h4></li>
+          <li class=""><a href="/sell/?ref=ftr">Open a Shop</a></li>
+          <li><a href="https://blog.etsy.com/en/category/seller-handbook/?ref=ftr">Seller Handbook</a></li>
+          <li><a href="/reader?ref=ftr">Etsy Credit Card Reader</a></li>
+        </ul>
+      </div> <!-- Column one end -->
+      <div class="col"> <!-- Column two start -->
+        <ul>
+          <li class=""><h4>Join the Community</h4></li>
+          <li><a href="/teams/?ref=ftr">Teams</a></li>
+          <li><a href="/forums/?ref=ftr">Forums</a></li>
+          <li><a href="/community/events/?ref=ftr">Upcoming Events</a></li>
+          <li><a href="/affiliates?ref=ftr">Affiliates</a></li>
+        </ul>
+      </div> <!-- Column two end -->
+      <div class="col"> <!-- Column three start -->
+        <ul>
+          <li class=""><h4>Discover and Shop</h4></li>
+          <li><a href="/giftcards/?ref=ftr">Gift Cards</a></li>
+          <li><a href="/blog/en/?ref=ftr">Blog</a></li>
+          <li><a href="/pages/?ref=ftr">Tastemakers</a></li>
+          <li><a href="/mobile/?ref=ftr">Mobile Apps</a></li>
+          <li><a href="/registry/?ref=ftr">Gift Registries</a></li>
+          <li><a href="/wholesale?ref=ftr">Wholesale</a></li>
+        </ul>
+      </div> <!-- Column three end -->
+      <div class="col"> <!-- Column four start -->
+        <ul>
+          <li class=""><h4>Get to Know Us</h4></li>
+          <li><a id="" href="/about/?ref=ftr">About</a></li>
+          <li><a href="/careers/?ref=ftr">Careers</a></li>
+          <li><a href="/press/?ref=ftr">Press</a></li>
+          <li><a href="/developers/?ref=ftr">Developers</a></li>
+        </ul>
+      </div> <!-- Column four end -->
+      <div class="col"> <!-- Column five start -->
+        <ul>
+          <li class=""><h4>Follow Etsy</h4></li>
+          <li class="social fb"><a href="https://www.facebook.com/Etsy/">Facebook</a></li>
+          <li class="social twitter"><a href="https://twitter.com/etsy/">Twitter</a></li>
+          <li class="social pin"><a href="http://www.pinterest.com/etsy/">Pinterest</a></li>
+          <li class="social instagram"><a href="http://instagram.com/etsy">Instagram</a></li>
+        </ul>
+      </div> <!-- Column five end -->
+    </div> <!-- end container1 -->
+  </div> <!-- end mainContainer -->
+
+
