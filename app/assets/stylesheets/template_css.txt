@@ -1,0 +1,511 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*/
+
+ /*
+html body
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+div {
+  border: 1px solid #ccc;
+}
+
+
+div:hover { 
+
+  width: 100px;
+  float: left; 
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+div:hover {
+  zoom: 1;
+  filter: alpha(opacity=45);
+  opacity: 0.45;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+div:hover {
+  box-shadow: 3px 3px 15px #666;
+  border-color:#C76C0C;
+  background: #C76C0C;
+  color: #fff;
+  cursor: pointer;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+ 
+
+:-webkit-input-placeholder {
+   text-align: center-left;
+}
+
+:-moz-placeholder {
+   text-align: center-left;  
+}
+
+::-moz-placeholder { 
+   text-align: center-left;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center-left; 
+}
+
+a:-webkit-any-link {
+color: -webkit-link;
+cursor: auto;
+}
+
+
+body {
+  font-family: "Arial","Helvetica",sans-serif;
+  font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div {
+  display: block;
+}
+
+img {
+  border: none;
+}
+
+.pageWrap {
+  background-color: F5F5F1;
+}
+
+.contentWrap {
+  border-top: none;
+  margin:0;
+  padding:0; 
+  margin-top: 50px;
+  width: 100% !important;
+  visibility: visible;
+  z-index: 1;
+  border-top: none;
+  clear: both;
+
+}
+
+.contentWrap::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mainContainer {
+  margin: 0 auto;
+  border-top: none;
+  margin-top: 0;
+  width: 960px;
+  clear:both;
+  height: auto;
+}
+
+.mainContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.header {
+  background-color:FFFFFF;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  height: 80px;
+}
+
+.headerBox {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header img {
+  float:left;
+  margin-top: 15px; 
+  overflow: hidden;
+}
+
+.searchBarWrap {
+
+}
+
+.searchWrapper {
+  float: left;
+  width: 100%;
+
+}
+
+#searchForm {
+  float: left;
+  width: 30%;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.searchBox {
+  float: left;
+  height: 31px;
+  font-size: 17px;
+  margin-left: 8.5px;
+}
+
+
+.squareButton{
+  float: right;
+  background: -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  padding: 7px 15px 8px;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:17px;
+  border-radius:1px;
+  border:1px solid #1A87B9;
+  border-color: #54acc7 #4ca0ba #398a9d;
+  text-align: center;
+  z-index: 10
+}
+
+.squareButton:hover,
+.squareButton:focus,
+.squareButton:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+.Browse {
+  position: static;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  padding-left: 20px;
+  width: auto;
+  height: 34px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Browse a {
+  display: block;
+  width: auto;
+  text-decoration: none;
+  padding: 0;
+  height: 34px;
+  cursor: pointer;
+}
+
+.spanOneBrowse {
+  border: 1px solid #E5E5E5;
+  height: auto;
+  white-space: nowrap;
+  padding: 8px;
+  border-radius: 3px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.2em;
+  display: block;
+  width: auto;
+  text-decoration: none;
+}
+
+.spanOneInner {
+  display: none;
+  display: block;
+  text-decoration: none;
+}
+
+.spanTwoInner::after {
+  display: block;
+  font-family: "SSStandard";
+  content: '▾';
+  color: #bbb;
+  font-size: 15px;
+  line-height: 1em;
+  position: relative;
+  top: 0;
+  left: 3px;
+  margin: 0 0 0 55px;
+  float:left;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.header li {
+  float: right;
+  display: inline;
+  margin-left: 10px;
+}
+
+
+.bodyWrap {
+  margin-top:20px;
+  width: 100%;
+  min-height: 1000px;
+}
+
+.sideBar {
+  position: static;
+  width: 224px;
+  float: left;
+}
+
+
+.sideBar ul {
+  margin-left: 20px;
+}
+
+h4#sideHeading {
+  margin-left: 10px;
+}
+.displaySearch {
+  float:left;
+  width: 720px;
+
+}
+
+.itemBox {
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+  float: right;
+  background-color: red;
+
+}
+
+.footer {
+	width: 100%;
+  margin: 0 auto;
+}
+
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footContainer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.footContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-3 {
+  float: left;
+  margin-left: 20px;
+}
+
+.col-1-2 {
+  float:left;
+}
+
+.col-4-5 {
+  float:right;
+
+}
+
+
+.col {
+	float:left;
+	width: 180px;
+	position:relative;
+  margin: 0 auto;
+}
+
+
+.buttonFormat {
+  background: #25A6E1;
+  padding:8px 13px;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:17px;
+  border-radius:4px;
+  border:1px solid #1A87B9
+}       
+
+.buttonFormat:hover,
+.buttonFormat:focus,
+.buttonFormat:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:link {
+  color: #0192b5;
+  text-decoration: none;
+}
+
+.bodyWrap {
+  width: 728px;
+}
+
+.fix {
+  zoom: 1;
+}
+
+.fix:before, .fix:after {
+  content: "";
+  display: table;
+}
+
+.fix:after {
+  clear: both;
+}
+
+#showcase {
+  clear: both;
+}
+
+.listing {
+  background: #fff;
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  margin-bottom: 18px;
+  height: 220px;
+}
+
+.col3 {
+  width: 224px;
+}
+.col {
+  float: left;
+  margin-right: 28px;
+}
+
+.col-last {
+  margin-right: 0 !important;
+}
+
+.searchHeader {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 7px;
+  z-index: 3;
+}
+
+.adIndicator a {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #666;
+  padding: 3px 5px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.imgWrap {
+  width: auto;
+  display: inline-block;
+  background: #F5F5F1;
+  border: 4px solid #fff;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 0px;
+}
+
+.imgWrap img {
+  width: 214px;
+  height: 170px;
+}
+
+.listingTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 2px 6px;
+}
+
+.listingTitle a {
+  font-family: arial,helvetica,sans-serif;
+  color: #666;
+}
+
+.listngInfo {
+  padding: 2px 6px 6px 6px;
+}
+
+.listMaker {
+  color: #b2b2b2;
+}
+
+.listingPrice {
+  display: inline-block;
+  color: #78c042;
+  width: 48%;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: right;
+  
+}
+*/ 

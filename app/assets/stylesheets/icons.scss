@@ -1,0 +1,43 @@
+/* Home */
+
+div.icon div.home {
+    height: 0px;
+    width: 0px;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    position: relative;
+    bottom: 35px;
+    left: 0;
+}
+
+div.icon div.home:after {
+    content: '';
+    width: 5px;
+    height: 16px;
+    background-color: transparent;
+    position: absolute;
+    top: 16px;
+    right: -11px;
+    border-left: 6px solid #333;
+    border-right: 16px solid #333;
+}
+
+div.icon div.home:before {
+    content: '';
+    width: 9px;
+    height: 6px;
+    background-color: #333;
+    position: absolute;
+    top: 16px;
+
+}
+
+div.icon div.chimney {
+    width: 4px;
+    height: 10px;
+    background: #333;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+}

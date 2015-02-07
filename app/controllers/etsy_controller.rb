@@ -10,7 +10,7 @@ class EtsyController < ApplicationController
       resp = Etsy::Request.get('/listings/active',
                                :includes => ['Images', 'Shop'],
                                :keyword => params[:search_query],
-                               :limit => 10) 
+                               :limit => 7) 
       @count = resp.total
       @results = resp.result
       #binding.pry
