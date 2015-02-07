@@ -6,13 +6,11 @@ class EtsyController < ApplicationController
 
   def show
     @results = []
-    #binding.pry
     if params[:search_query]
       resp = Etsy::Request.get('/listings/active',
                                :includes => ['Images', 'Shop'],
                                :keyword => params[:search_query],
                                :limit => 10) 
-      #binding.pry
       @count = resp.total
       @results = resp.result
       #binding.pry

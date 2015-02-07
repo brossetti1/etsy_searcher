@@ -4,7 +4,7 @@
         <%= submit_tag("Search") %> 
       <% end %> 
 
-      <h1> All Categories < <%= search query "(#{@count} Results)"%> </h1>
+     <h4 id="sideHeading"> All Categories > <%= search query "(#{@count} Results)" %> </h4> 
       <% if @results %>
       	<ol>
       	<% @results.each do |result| %>
@@ -72,24 +72,175 @@
                 		    <li class="social pin"><a href="http://www.pinterest.com/etsy/">Pinterest</a></li>
                 		    <li class="social instagram"><a href="http://instagram.com/etsy">Instagram</a></li>
                 		</ul>
-					</div> <!-- Column five end -->
-				</div> <!-- end container1 -->
-			</div> <!-- end container2 -->
-		</div> <!-- end container3 -->
-	</div> <!-- end container4 -->
-</div> <!-- end container5 --> 
+	
 
 
-    </div> <!-- end bodyContainer -->
-    <div class="bodyContainer"> <!-- start bodyContainer -->
+
+a:link {
+  color: #0192b5;
+  text-decoration: none;
+}
+
+.bodyWrap {
+  width: 728px;
+}
+
+.bodyWrap:before, .bodyWrap:after {
+  content: "";
+  display: table;
+}
+
+#showcase {
+  clear: both;
+}
+
+.listing {
+  background: #fff;
+  position: relative;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  margin-bottom: 18px;
+  height: 220px;
+}
+
+.col3 {
+  width: 224px;
+}
+.col {
+  float: left;
+  margin-right: 28px;
+}
+
+.col-last {
+  margin-right: 0 !important;
 
 
-          <div class="container5"> <!-- start container 1 -->
-      <div class="container4"> <!-- start container 2 -->
-        <div class="container3"> <!-- start container 3 -->
-          <div class="container2"> <!-- start container 4 -->
+.searchHeader {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 7px;
+  z-index: 3;
+}
 
-                      </div> <!-- end container2 -->
-        </div> <!-- end container3 -->
-      </div> <!-- end container4 -->
-    </div> <!-- end container5 -->
+.adIndicator a {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #666;
+  padding: 3px 5px;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.imgWrap {
+  width: auto;
+  display: inline-block;
+  background: #F5F5F1;
+  border: 4px solid #fff;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 0px;
+}
+
+.listingTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 2px 6px;
+}
+
+.listingTitle a {
+  font-family: arial,helvetica,sans-serif;
+  color: #666;
+}
+
+.listngInfo {
+  padding: 2px 6px 6px 6px;
+}
+
+.listMaker {
+  color: #b2b2b2;
+}
+
+.listingPrice {
+  display: inline-block;
+  color: #78c042;
+  width: 48%;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: right;
+  
+}
+
+
+  <div class="bodyWrap"> <!-- start bodyWrap -->
+    ::before
+    <div class="searchHeader">
+      All Categories > <%= search query "(#{@count} Results)" %> </h4> 
+    </div> #do later
+    <div id="showcase"></div>
+    <div class="listing item col col3"> <!-- start listing item col col3 -->
+      <div class="adIndicator"><a href="#"></a></div> #do later
+      <a href="#{result.urlLink}" class="imgWrap">
+        <img src="#{result.imgUrl" alt="result.itemName">
+      </a>
+      <div class="listingDetail"> <!-- start listingDetail -->
+        <div class="listingTitle"> <!-- start listingTitle -->
+          ::before
+          <a href="#{result.listingLink}">"#{result.listingProduct}"</a>
+          ::after
+        </div> <!-- end listingTitle -->
+        <div class="listingInfo"> <!-- start listingInfo -->
+          ::before
+          <div class="listingMaker"> <!-- start listingMaker -->
+            <a href="#{result.companyLink}"></a>            
+          </div> <!-- end listingMaker -->
+          <div class="listingPrice"> <!-- start listingPrice -->
+            <span class="currencySymbol">"#{result.currencySymbol}"</span>
+            <span class="currencyValue">"#{result.itemAmount}"</span>
+            <span class="currencyCode">"#{result.currencyCode"</span>
+          </div> <!-- end listingPrice -->
+          ::after
+        </div> <!-- end listingInfo -->
+      </div> <!-- end listingDetail ###### hideLink goes after this--> 
+    </div> <!-- end listing item col col3 -->
+  </div> <!-- end bodyWrap -->
+
+
+
+
+  <div class="hideLink"> <!-- start hideLink -->
+        <div class="collectionUI"> <!-- start CollectionUI -->
+          <div class="favoriteContainer"> <!-- start favoriteContainer -->
+            <button type="button" class="favButton">
+              <span> </span> #fix up later -- bootstrap CSS
+              <span> </span> #fix up later -- bootstrap CSS
+              <span> </span> #fix up later -- bootstrap CSS
+              <span> </span> #fix up later -- bootstrap CSS
+            </button> #fix up later -- bootstrap CSS
+          </div> <!-- end favoriteContainer -->
+          <div class="collectContainer"> <!-- start collectContainer -->
+            <button>
+              #some more stuff
+            </button>
+          </div> <!-- end collectContainer -->
+        </div> <!-- end collectionUI -->
+      </div> <!-- end hideLink -->
