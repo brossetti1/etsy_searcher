@@ -22,9 +22,10 @@ html body{
   height: 100%;
 }
 /*
-div:hover { border: 3px solid black; }
-div:hover { margin: -3px; }
+div { border: 3px solid black; }
+div { margin: -3px; }
 */
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -42,6 +43,7 @@ body {
 
 ul {
     list-style-type: none;
+    margin-left: 0;
 }
 
 a:link, a:visited {
@@ -62,7 +64,8 @@ a:link, a:visited {
   position: relative;
   width: 960px;
   margin: 0 auto;
-  height: 100%
+  height: 100%;
+
 }
 
 
@@ -223,7 +226,23 @@ a:link, a:visited {
 }
 
 .topSideBar, .bottomSideBar {
-  background-color: #FFFFFF;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 14px 14px 14px 14px;
+  border: 1px solid #ececec;
+  text-align: left;
+}
+
+.topSideBar li {
+  padding-top: 7px;
+  margin-left: 10px;
+
+}
+
+.topSideBar li span {
+  margin-left: 0;
+  -webkit-margin-before: 0;
 }
 
 .sideBar span {
@@ -232,7 +251,22 @@ a:link, a:visited {
 
 .sideBar ul {
   list-style: none;
+  line-height: 17px;
+  -webkit-padding-start: 0px;
 }
+
+.sideBar h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+
+.bottomSideBar li {
+  margin-left: 10px;
+  padding-top: 7px;
+}
+
 
 .itemWrap {
   float: right;
@@ -384,5 +418,79 @@ a:link, a:visited {
   border-color: #3071a9;
 }
 
+.midFooter {
+  border-top: #E2E2E2 solid 1px;
+  text-align: center;
+  padding-top: 28px;
+  width: 960px;
+  margin: 0 auto;
 
+}
+
+
+.listFooter {
+  margin-left: 280px;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.listFooter li {
+  list-style: none;
+  float: left;
+  border: 1px solid #E2E2E2;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.listFooter li.first {
+  border-right: 0 none;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.listFooter li a {
+  float: left;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 14px;
+  color: #666;
+  display: block;
+}
+
+a.helpButton {
+  float: left;
+  border: 1px solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFF;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-left: 20px;
+  border-color: #54acc7 #4ca0ba #398a9d;
+  background: #4fa9c6;
+  background: -webkit-linear-gradient(#98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  background: -o-linear-gradient(#98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  background: linear-gradient(#98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  display: block;
+  line-height: 16px;
+  padding: 10px 14px;
+}
+
+.helpButton:hover,
+.helpButton:focus,
+.helpButton:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+a:link.helpButton, a:visited.helpButton  {
+  color: #fff;
+  text-decoration: none;
+}
 
